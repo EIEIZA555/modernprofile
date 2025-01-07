@@ -11,13 +11,19 @@ const iconPrimary = Colors.amber;
 const iconSecondary = Colors.white;
 
 final textTitle = GoogleFonts.poppins(
-  fontSize: 20,
+  fontSize: 30,
   fontWeight: FontWeight.w600,
-  color: textPrimary,
+  color: textSecondary,
 );
 
 final textSubTitle = GoogleFonts.poppins(
   fontSize: 14,
   fontWeight: FontWeight.w400,
-  color: textPrimary,
+  color: textSecondary,
+);
+
+final textBtn = GoogleFonts.poppins (
+  fontSize: 18,
+  color: Colors.blue,
+  fontWeight: FontWeight.w500,
 );
