@@ -24,6 +24,6 @@ final textSubTitle = GoogleFonts.poppins(
 
 final textBtn = GoogleFonts.poppins (
   fontSize: 18,
-  color: Colors.blue,
+  color: Colors.black,
   fontWeight: FontWeight.w500,
 );

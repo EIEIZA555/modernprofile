@@ -12,7 +12,7 @@ class ProfileImage extends StatelessWidget {
         alignment: Alignment.bottomRight,
         children: [
           CircleAvatar(
-            backgroundColor: Colors.green,
+            backgroundColor: Colors.black,
             radius: 60,
             child: CircleAvatar(
               radius: 55,
