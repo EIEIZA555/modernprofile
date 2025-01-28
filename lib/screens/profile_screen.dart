@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:modern_profile/screens/editprofile_screen.dart';
 import '../constant/constant.dart';
+import 'package:modern_profile/screens/home_screen.dart';  
 
 class ProfileScreen extends StatefulWidget {
   const ProfileScreen({super.key});
@@ -11,6 +12,13 @@ class ProfileScreen extends StatefulWidget {
 
 class _ProfileScreenState extends State<ProfileScreen> {
   int _selectedItem = 0;
+  
+  final List<String> _titles = [
+    "Home",            
+    "Settings",        
+    "Edit Profile",    
+    "Favourite",         
+  ];
 
   void _navigationBottomNavBar(int index) {
     setState(() {
@@ -19,10 +27,10 @@ class _ProfileScreenState extends State<ProfileScreen> {
     });
   }
   final List<Widget> _pages = [
-    const Text("Home"),
+    const HomeScreen(),
     const Text("Setting"),
     const EditProfileScreen(),
-    const Text("Balance"),
+    const Text("Favourite"),
   ]; 
 
   @override
@@ -36,7 +44,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         ),
         title: Center(
             child: Text(
-          "Edit Profile",
+           _titles[_selectedItem],
           style: textTitle,
         )),
         actions: const [
@@ -79,11 +87,11 @@ class _ProfileScreenState extends State<ProfileScreen> {
               label: "Edit Profile"),
           BottomNavigationBarItem(
               icon: Icon(
-                Icons.diamond,
+                Icons.star,
                 size: 30,
                 color: Colors.cyan,
               ),
-              label: "Balance"),
+              label: "Favourtie"),
         ],
       ),
     );
