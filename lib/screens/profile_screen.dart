@@ -40,7 +40,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
         leading: Icon(
           Icons.arrow_back_ios,
           size: 20,
-          color: Colors.cyan,
+          color: Colors.orange,
         ),
         title: Center(
             child: Text(
@@ -51,7 +51,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
           Icon(
             Icons.exit_to_app,
             size: 24,
-            color: Colors.cyan,
+            color: Colors.orange,
           ),
           SizedBox(
             width: 10,
@@ -68,28 +68,28 @@ class _ProfileScreenState extends State<ProfileScreen> {
               icon: Icon(
                 Icons.home,
                 size: 30,
-                color: Colors.cyan,
+                color: Colors.orange,
               ),
               label: "Home"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.settings,
                 size: 30,
-                color: Colors.cyan,
+                color: Colors.orange,
               ),
               label: "Settings"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.person,
                 size: 30,
-                color: Colors.cyan,
+                color: Colors.orange,
               ),
               label: "Edit Profile"),
           BottomNavigationBarItem(
               icon: Icon(
                 Icons.star,
                 size: 30,
-                color: Colors.cyan,
+                color: Colors.orange,
               ),
               label: "Favourtie"),
         ],
